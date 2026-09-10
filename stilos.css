@@ -1,0 +1,2824 @@
+/* =====================================================
+   CONFIGURACIÓN GENERAL
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --azul-profundo: #082c50;
+
+    --azul-oscuro: #0b3d6b;
+
+    --azul: #1261a0;
+
+    --azul-claro: #e7f2fb;
+
+    --celeste: #d8ebfa;
+
+    --gris: #66788a;
+
+    --gris-claro: #f4f7fa;
+
+    --borde: #dce6ef;
+
+    --blanco: #ffffff;
+
+    --negro: #17212b;
+
+    --sombra:
+        0 10px 30px rgba(8, 44, 80, 0.08);
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family:
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    color: var(--negro);
+
+    background: #f8fafc;
+
+    line-height: 1.6;
+
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =====================================================
+   NAVEGACIÓN
+===================================================== */
+
+.navbar {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    min-height: 72px;
+
+    padding: 0 5%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background:
+        rgba(255, 255, 255, 0.96);
+
+    border-bottom:
+        1px solid var(--borde);
+
+    backdrop-filter:
+        blur(10px);
+
+}
+
+
+.logo {
+
+    color: var(--azul-profundo);
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+.logo span {
+    color: var(--azul);
+}
+
+
+.navbar nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 5px;
+
+}
+
+
+.navbar nav a {
+
+    padding: 9px 13px;
+
+    color: var(--gris);
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    border-radius: 7px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.navbar nav a:hover {
+
+    color: var(--azul);
+
+    background: var(--azul-claro);
+
+}
+
+
+.navbar nav a.activo {
+
+    color: white;
+
+    background: var(--azul-profundo);
+
+}
+
+
+/* =====================================================
+   ELEMENTOS GENERALES
+===================================================== */
+
+.etiqueta {
+
+    display: inline-block;
+
+    color: var(--azul);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+
+.boton {
+
+    display: inline-block;
+
+    margin-top: 22px;
+
+    padding: 12px 22px;
+
+    color: white;
+
+    background: var(--azul);
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+
+}
+
+
+.boton:hover {
+
+    background: var(--azul-profundo);
+
+    transform: translateY(-2px);
+
+}
+
+
+.seccion-titulo h2 {
+
+    color: var(--azul-oscuro);
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+}
+
+
+.seccion-titulo p {
+
+    color: var(--gris);
+
+    font-size: 13px;
+
+}
+
+
+/* =====================================================
+   PORTADA INDEX
+===================================================== */
+
+.hero {
+
+    min-height: 620px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 80px 8%;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(4, 25, 48, 0.94),
+            rgba(5, 50, 90, 0.75),
+            rgba(5, 50, 90, 0.30)
+        ),
+
+        url("img/fondo.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.hero-contenido {
+
+    max-width: 700px;
+
+    color: white;
+
+}
+
+
+.hero .etiqueta {
+
+    color: #a9d6f7;
+
+}
+
+
+.hero h1 {
+
+    margin-top: 12px;
+
+    font-size:
+        clamp(38px, 6vw, 68px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+}
+
+
+.hero h1 span {
+
+    display: block;
+
+    color: #8fd0ff;
+
+}
+
+
+.hero p {
+
+    max-width: 600px;
+
+    margin-top: 22px;
+
+    color: #e2edf6;
+
+    font-size: 15px;
+
+}
+
+
+/* =====================================================
+   INICIO
+===================================================== */
+
+.inicio-seccion {
+
+    width: min(1100px, 90%);
+
+    margin: auto;
+
+    padding: 90px 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 300px;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+
+.inicio-texto h2 {
+
+    margin: 10px 0 20px;
+
+    color: var(--azul-oscuro);
+
+    font-size: 40px;
+
+}
+
+
+.inicio-texto p {
+
+    max-width: 680px;
+
+    margin-bottom: 12px;
+
+    color: var(--gris);
+
+    font-size: 13px;
+
+}
+
+
+.inicio-card {
+
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+
+}
+
+
+.inicio-card span {
+
+    color: var(--azul-claro);
+
+    font-size: 55px;
+
+    font-weight: 800;
+
+}
+
+
+.inicio-card h3 {
+
+    color: var(--azul-oscuro);
+
+    font-size: 20px;
+
+}
+
+
+.inicio-card p {
+
+    margin-top: 8px;
+
+    color: var(--gris);
+
+    font-size: 12px;
+
+}
+
+
+/* =====================================================
+   ETAPAS
+===================================================== */
+
+.etapas {
+
+    padding: 80px 5%;
+
+    background: white;
+
+}
+
+
+.etapas-grid {
+
+    width: min(1100px, 100%);
+
+    margin: 35px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 12px;
+
+}
+
+
+.etapa {
+
+    padding: 25px 18px;
+
+    background: #f8fafc;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 12px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.etapa:hover {
+
+    transform: translateY(-6px);
+
+    background: white;
+
+    box-shadow: var(--sombra);
+
+}
+
+
+.etapa span {
+
+    color: #c5dff1;
+
+    font-size: 34px;
+
+    font-weight: 800;
+
+}
+
+
+.etapa h3 {
+
+    margin-top: 8px;
+
+    color: var(--azul-oscuro);
+
+    font-size: 15px;
+
+}
+
+
+.etapa p {
+
+    margin-top: 5px;
+
+    color: var(--gris);
+
+    font-size: 10px;
+
+}
+
+
+/* =====================================================
+   HERO DE PÁGINAS
+===================================================== */
+
+.pagina-hero {
+
+    min-height: 330px;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 60px 8%;
+
+    background:
+
+        linear-gradient(
+            110deg,
+            rgba(4, 30, 57, 0.96),
+            rgba(12, 76, 130, 0.82)
+        ),
+
+        url("img/fondo.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.pagina-hero-contenido {
+
+    max-width: 800px;
+
+    color: white;
+
+}
+
+
+.pagina-hero .etiqueta {
+
+    color: #9bd5fc;
+
+}
+
+
+.pagina-hero h1 {
+
+    margin-top: 10px;
+
+    font-size:
+        clamp(38px, 6vw, 60px);
+
+    line-height: 1;
+
+}
+
+
+.pagina-hero p {
+
+    max-width: 650px;
+
+    margin-top: 15px;
+
+    color: #d9eaf7;
+
+    font-size: 14px;
+
+}
+
+
+/* =====================================================
+   EMPATIZAR
+===================================================== */
+
+.entrevista-intro {
+
+    width: min(900px, 90%);
+
+    margin: auto;
+
+    padding: 70px 0 35px;
+
+    text-align: center;
+
+}
+
+
+.entrevista-intro h2 {
+
+    margin: 8px 0 12px;
+
+    color: var(--azul-oscuro);
+
+    font-size: 35px;
+
+}
+
+
+.entrevista-intro p {
+
+    color: var(--gris);
+
+    font-size: 13px;
+
+}
+
+
+.estudiante {
+
+    width: min(1050px, 90%);
+
+    margin: 30px auto 70px;
+
+    padding: 25px;
+
+    display: grid;
+
+    grid-template-columns: 230px 1fr;
+
+    gap: 30px;
+
+    background: white;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+
+}
+
+
+.estudiante-foto {
+
+    position: relative;
+
+    height: 290px;
+
+    overflow: hidden;
+
+    border-radius: 11px;
+
+    background: var(--azul-claro);
+
+}
+
+
+.estudiante-foto {
+    position: relative;
+    height: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    border-radius: 11px;
+    background: var(--azul-claro);
+}
+
+.estudiante-foto video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    background: #E7F2FB;
+}
+
+.estudiante-nombre {
+
+    position: absolute;
+
+    bottom: 0;
+
+    left: 0;
+
+    right: 0;
+
+    padding: 20px 15px 15px;
+
+    color: white;
+
+    background:
+        linear-gradient(
+            transparent,
+            rgba(3, 25, 46, 0.95)
+        );
+
+}
+
+
+.estudiante-nombre span {
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+.estudiante-nombre h2 {
+
+    font-size: 15px;
+
+}
+
+
+.preguntas {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+
+}
+
+
+.pregunta {
+
+    padding: 12px 15px;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 9px;
+
+    background: #fbfdff;
+
+}
+
+
+.pregunta > span {
+
+    display: inline-flex;
+
+    width: 24px;
+
+    height: 24px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-right: 7px;
+
+    color: var(--azul);
+
+    background: var(--azul-claro);
+
+    border-radius: 6px;
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    vertical-align: middle;
+
+}
+
+
+.pregunta h3 {
+
+    display: inline;
+
+    color: var(--azul-oscuro);
+
+    font-size: 11px;
+
+    line-height: 1.4;
+
+}
+
+
+.respuesta { 
+    min-height: 25px; 
+    margin-top: 8px; 
+    padding: 7px 9px; 
+    color: #405364; 
+    background: white; 
+    border-bottom: 1px dashed #9fb3c5; 
+    font-size: 12px; 
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* =====================================================
+   DEFINICIÓN
+===================================================== */
+
+.definicion-intro {
+
+    width: min(1100px, 90%);
+
+    margin: auto;
+
+    padding: 75px 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 230px;
+
+    gap: 50px;
+
+    align-items: center;
+
+}
+
+
+.definicion-intro-texto h2 {
+
+    max-width: 720px;
+
+    margin: 10px 0 18px;
+
+    color: var(--azul-oscuro);
+
+    font-size: 40px;
+
+    line-height: 1.12;
+
+}
+
+
+.definicion-intro-texto p {
+
+    max-width: 700px;
+
+    margin-bottom: 12px;
+
+    color: var(--gris);
+
+    font-size: 13px;
+
+}
+
+
+.definicion-numero {
+
+    padding: 30px;
+
+    text-align: center;
+
+    background: white;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 16px;
+
+    box-shadow: var(--sombra);
+
+}
+
+
+.definicion-numero span {
+
+    display: block;
+
+    color: var(--azul-profundo);
+
+    font-size: 65px;
+
+    font-weight: 800;
+
+}
+
+
+.definicion-numero p {
+
+    color: var(--gris);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+}
+
+
+.situacion-seccion {
+
+    width: min(1100px, 90%);
+
+    margin: auto;
+
+    padding: 20px 0 80px;
+
+}
+
+
+.seccion-titulo {
+
+    margin-bottom: 30px;
+
+}
+
+
+.problema-principal {
+
+    padding: 30px;
+
+    display: grid;
+
+    grid-template-columns: 55px 1fr;
+
+    gap: 20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            white,
+            #f1f7fd
+        );
+
+    border: 1px solid var(--borde);
+
+    border-left: 5px solid var(--azul);
+
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+
+}
+
+
+.problema-icono {
+
+    width: 48px;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    background: var(--azul-profundo);
+
+    border-radius: 12px;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+}
+
+
+.problema-label {
+
+    color: var(--azul);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+
+.problema-principal h3 {
+
+    max-width: 850px;
+
+    margin: 7px 0 12px;
+
+    color: var(--azul-oscuro);
+
+    font-size: 21px;
+
+}
+
+
+.problema-principal p {
+
+    max-width: 850px;
+
+    color: var(--gris);
+
+    font-size: 13px;
+
+}
+
+
+.necesidades-seccion {
+
+    padding: 80px 5%;
+
+    background: white;
+
+}
+
+
+.necesidades-grid {
+
+    width: min(1100px, 100%);
+
+    margin: 35px auto 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 16px;
+
+}
+
+
+.necesidad-card {
+
+    padding: 24px;
+
+    background: #f8fafc;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 13px;
+
+    transition: 0.3s ease;
+
+}
+
+
+.necesidad-card:hover {
+
+    transform: translateY(-5px);
+
+    background: white;
+
+    box-shadow: var(--sombra);
+
+}
+
+
+.necesidad-numero {
+
+    width: 35px;
+
+    height: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    color: var(--azul-profundo);
+
+    background: var(--azul-claro);
+
+    border-radius: 8px;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+}
+
+
+.necesidad-card h3 {
+
+    margin-bottom: 8px;
+
+    color: var(--azul-oscuro);
+
+    font-size: 16px;
+
+}
+
+
+.necesidad-card p {
+
+    color: var(--gris);
+
+    font-size: 11px;
+
+}
+
+
+.pregunta-diseño {
+
+    padding: 90px 5%;
+
+    color: white;
+
+    text-align: center;
+
+    background:
+
+        linear-gradient(
+            120deg,
+            rgba(4, 26, 52, 0.96),
+            rgba(9, 72, 137, 0.92)
+        ),
+
+        url("img/fondo.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+
+.pregunta-diseño-contenido {
+
+    width: min(900px, 100%);
+
+    margin: auto;
+
+}
+
+
+.pregunta-diseño .etiqueta {
+
+    color: #9bd5fc;
+
+}
+
+
+.pregunta-diseño h2 {
+
+    margin: 12px auto 18px;
+
+    font-size:
+        clamp(27px, 4vw, 43px);
+
+    line-height: 1.15;
+
+}
+
+
+.pregunta-diseño p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    color: #d5e8f9;
+
+    font-size: 13px;
+
+}
+
+
+.objetivo-seccion {
+
+    width: min(1100px, 90%);
+
+    margin: auto;
+
+    padding: 80px 0;
+
+}
+
+
+.objetivo-card {
+
+    padding: 35px;
+
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    gap: 30px;
+
+    background: white;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 16px;
+
+    box-shadow: var(--sombra);
+
+}
+
+
+.objetivo-numero {
+
+    color: #c5dff1;
+
+    font-size: 60px;
+
+    font-weight: 800;
+
+}
+
+
+.objetivo-contenido h2 {
+
+    max-width: 750px;
+
+    margin: 8px 0 14px;
+
+    color: var(--azul-oscuro);
+
+    font-size: 28px;
+
+}
+
+
+.objetivo-contenido p {
+
+    max-width: 750px;
+
+    color: var(--gris);
+
+    font-size: 13px;
+
+}
+
+
+/* =====================================================
+   IDEAS
+===================================================== */
+
+.ideas-seccion {
+
+    width: min(1100px, 90%);
+
+    margin: auto;
+
+    padding: 75px 0;
+
+}
+
+
+.ideas-grid {
+
+    margin-top: 35px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 18px;
+
+}
+
+
+.idea-card {
+
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid var(--borde);
+
+    border-radius: 14px;
+
+    box-shadow: var(--sombra);
+
+    transition: 0.3s ease;
+
+}
+
+
+.idea-card:hover {
+
+    transform: translateY(-5px);
+
+}
+
+
+.idea-numero {
+
+    color: #c5dff1;
+
+    font-size: 38px;
+
+    font-weight: 800;
+
+}
+
+
+.idea-card h3 {
+
+    margin-top: 5px;
+
+    color: var(--azul-oscuro);
+
+    font-size: 21px;
+
+}
+
+
+.idea-card p {
+
+    margin: 10px 0 15px;
+
+    color: var(--gris);
+
+    font-size: 12px;
+
+}
+
+
+.idea-tags {
+
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    color: var(--azul);
+
+    background: var(--azul-claro);
+
+    border-radius: 5px;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+}
+
+
+.idea-final {
+
+    padding: 80px 5%;
+
+    color: white;
+
+    text-align: center;
+
+    background: var(--azul-profundo);
+
+}
+
+
+.idea-final .etiqueta {
+
+    color: #9bd5fc;
+
+}
+
+
+.idea-final h2 {
+
+    max-width: 750px;
+
+    margin: 12px auto;
+
+    font-size: 35px;
+
+}
+
+/* =====================================================
+   WIREFRAME
+===================================================== */
+
+.wireframe-seccion {
+    width: min(1200px, 90%);
+    margin: auto;
+    padding: 30px 0 80px;
+}
+
+.wireframe-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.wireframe-archivo,
+.wireframe-boceto {
+    min-width: 0;
+}
+
+.wireframe-archivo h3,
+.wireframe-boceto h3 {
+    font-size: 22px;
+}
+
+.wireframe-archivo p,
+.wireframe-boceto p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ESPACIO DEL DOCUMENTO */
+
+.archivo-box {
+    margin-top: 15px;
+
+    min-height: 230px;
+    height: auto;
+
+    padding: 30px;
+
+    background: white;
+    border: 1px solid var(--borde);
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* ICONO */
+
+.archivo-icono {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    color: white;
+    background: var(--azul);
+
+    border-radius: 12px;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+/* TEXTO DEL DOCUMENTO */
+
+.archivo-box h3 {
+    color: var(--azul-oscuro);
+    font-size: 20px;
+}
+
+.archivo-box p {
+    max-width: 450px;
+
+    margin-top: 10px;
+
+    color: var(--gris);
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* BOTÓN */
+
+.boton-wireframe {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-top: 20px;
+    padding: 11px 18px;
+
+    color: white;
+    background: var(--azul);
+
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: .3s ease;
+}
+
+.boton-wireframe:hover {
+    background: var(--azul-profundo);
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   BOCETO GRANDE
+===================================================== */
+
+.boceto-box {
+    position: relative;
+
+    margin-top: 15px;
+
+    height: 560px;
+
+    padding: 12px;
+
+    overflow: hidden;
+
+    background: white;
+
+    border: 1px solid var(--borde);
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+}
+
+.boceto-box img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    border-radius: 10px;
+}
+
+
+/* BOTÓN PARA AGRANDAR EL BOCETO */
+
+.boceto-ampliar {
+    position: absolute;
+
+    right: 20px;
+    bottom: 20px;
+
+    padding: 11px 18px;
+
+    border: none;
+    border-radius: 7px;
+
+    color: white;
+    background: var(--azul);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .3s ease;
+}
+
+.boceto-ampliar:hover {
+    background: var(--azul-profundo);
+    transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   BOCETO - CELULAR
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .boceto-box {
+        height: 450px;
+        padding: 8px;
+    }
+
+    .boceto-ampliar {
+        right: 12px;
+        bottom: 12px;
+
+        padding: 9px 14px;
+
+        font-size: 11px;
+    }
+}
+
+
+/* =====================================================
+   BOCETO - CELULAR PEQUEÑO
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .boceto-box {
+        height: 380px;
+    }
+
+}
+/* =====================================================
+   CORRECCIÓN DE ALINEACIÓN DEL WIREFRAME
+===================================================== */
+
+.wireframe-grid {
+    align-items: start;
+}
+
+.wireframe-archivo,
+.wireframe-boceto {
+    align-self: start;
+}
+
+.wireframe-boceto {
+    margin-top: 0;
+}
+/* =====================================================
+   PROTOTIPO
+===================================================== */
+
+.prototipo-seccion {
+    width: min(1300px, 90%);
+    margin: auto;
+    padding: 80px 0;
+
+    display: grid;
+    grid-template-columns: 470px 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+
+/* =====================================================
+   VISTAS DEL PROTOTIPO
+===================================================== */
+
+.prototipo-imagen {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 12px;
+
+    background: #eef7fc;
+    border: 1px solid var(--borde);
+    border-radius: 15px;
+
+    box-shadow: var(--sombra);
+}
+
+
+/* CADA CUADRO */
+
+.vista-prototipo {
+    position: relative;
+
+    width: 100%;
+    height: 245px;
+
+    overflow: hidden;
+
+    background: #f5f9fc;
+    border: 1px solid #c7e1f2;
+    border-radius: 12px;
+}
+
+
+/* IMAGEN */
+
+.vista-prototipo img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+    object-position: center;
+}
+
+
+/* NOMBRE DE LA VISTA */
+
+.titulo-vista {
+    position: absolute;
+
+    top: 12px;
+    left: 12px;
+
+    z-index: 2;
+
+    padding: 8px 12px;
+
+    color: var(--azul-profundo);
+    background: white;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    box-shadow: 0 3px 10px rgba(8, 44, 80, 0.10);
+}
+
+
+/* BOTÓN VER COMPLETO */
+
+.vista-prototipo button {
+    position: absolute;
+
+    bottom: 12px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 10px 22px;
+
+    border: none;
+    border-radius: 7px;
+
+    color: white;
+    background: var(--azul);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.vista-prototipo button:hover {
+    background: var(--azul-profundo);
+    transform: translateX(-50%) translateY(-2px);
+}
+
+
+/* =====================================================
+   INFORMACIÓN
+===================================================== */
+
+.prototipo-info {
+    width: 100%;
+}
+
+.prototipo-info h2 {
+    margin: 12px 0 20px;
+
+    color: var(--azul-oscuro);
+
+    font-size: clamp(38px, 4vw, 56px);
+    line-height: 1.08;
+}
+
+.prototipo-info > p {
+    max-width: 800px;
+
+    color: var(--gris);
+
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   CARACTERÍSTICAS
+===================================================== */
+
+.caracteristicas {
+    margin-top: 35px;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+}
+
+.caracteristicas div {
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+
+    min-height: 100px;
+}
+
+.caracteristicas span {
+    color: var(--azul);
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.caracteristicas h3 {
+    margin-top: 8px;
+
+    color: var(--azul-oscuro);
+
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   VISOR DE IMAGEN COMPLETA
+===================================================== */
+
+.visor-imagen {
+    display: none;
+
+    position: fixed;
+    inset: 0;
+
+    z-index: 9999;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.92);
+}
+
+.visor-imagen.activo {
+    display: flex;
+}
+
+.visor-imagen img {
+    max-width: 95vw;
+    max-height: 90vh;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+}
+
+.cerrar-visor {
+    position: absolute;
+
+    top: 20px;
+    right: 25px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    color: var(--azul-profundo);
+    background: white;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .prototipo-seccion {
+        width: 90%;
+
+        grid-template-columns: 400px 1fr;
+
+        gap: 40px;
+    }
+
+    .vista-prototipo {
+        height: 220px;
+    }
+
+    .prototipo-info h2 {
+        font-size: 40px;
+    }
+
+    .prototipo-info > p {
+        font-size: 15px;
+    }
+
+    .caracteristicas div {
+        padding: 20px;
+    }
+}
+
+
+/* =====================================================
+   TABLET PEQUEÑA / CELULAR
+===================================================== */
+
+@media (max-width: 800px) {
+
+    .prototipo-seccion {
+        width: 92%;
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+
+        padding: 60px 0;
+    }
+
+    .prototipo-imagen {
+        width: 100%;
+    }
+
+    .vista-prototipo {
+        height: 240px;
+    }
+
+    .prototipo-info h2 {
+        font-size: 38px;
+    }
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .prototipo-seccion {
+        width: 92%;
+        padding: 45px 0;
+
+        gap: 30px;
+    }
+
+    .prototipo-imagen {
+        padding: 8px;
+        gap: 10px;
+    }
+
+    .vista-prototipo {
+        height: 220px;
+    }
+
+    .titulo-vista {
+        top: 8px;
+        left: 8px;
+
+        padding: 6px 9px;
+
+        font-size: 11px;
+    }
+
+    .vista-prototipo button {
+        bottom: 8px;
+
+        padding: 9px 16px;
+
+        font-size: 11px;
+    }
+
+    .prototipo-info h2 {
+        font-size: 32px;
+    }
+
+    .prototipo-info > p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .caracteristicas {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .caracteristicas div {
+        padding: 18px;
+        min-height: auto;
+    }
+
+    .caracteristicas h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* =====================================================
+   CELULAR PEQUEÑO
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .prototipo-seccion {
+        width: 94%;
+    }
+
+    .vista-prototipo {
+        height: 190px;
+    }
+
+    .prototipo-info h2 {
+        font-size: 28px;
+    }
+
+    .prototipo-info > p {
+        font-size: 13px;
+    }
+
+    .caracteristicas h3 {
+        font-size: 15px;
+    }
+}
+
+/* =====================================================
+   EVALUACIÓN
+===================================================== */
+
+.evaluacion-intro {
+    width: min(800px, 90%);
+    margin: auto;
+    padding: 75px 0 45px;
+    text-align: center;
+}
+
+.evaluacion-intro h2 {
+    margin: 10px 0;
+    color: var(--azul-oscuro);
+    font-size: 38px;
+}
+
+.evaluacion-intro p {
+    color: var(--gris);
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   CONTENEDOR DE LOS VIDEOS
+===================================================== */
+
+.criterios {
+    width: min(1050px, 90%);
+    margin: auto;
+    padding-bottom: 75px;
+}
+
+
+/* =====================================================
+   GRID DE VIDEOS
+===================================================== */
+
+.evaluacion-videos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+
+/* =====================================================
+   TARJETA DE VIDEO
+===================================================== */
+
+.video-evaluacion {
+    position: relative;
+    min-width: 0;
+    padding: 12px;
+
+    background: white;
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+
+    box-shadow:
+        0 5px 18px rgba(8, 44, 80, 0.07);
+
+    /* IMPORTANTE:
+       No usamos overflow hidden en la tarjeta,
+       para evitar problemas con pantalla completa */
+    overflow: visible;
+
+    transition:
+        box-shadow 0.3s ease;
+}
+
+
+/* =====================================================
+   EFECTO AL PASAR EL MOUSE
+===================================================== */
+
+.video-evaluacion:hover {
+    box-shadow:
+        0 10px 25px rgba(8, 44, 80, 0.11);
+}
+
+
+/* =====================================================
+   NUMERO
+===================================================== */
+
+.video-numero {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 32px;
+    height: 24px;
+
+    margin-bottom: 8px;
+
+    color: #2daed8;
+    background: #e6f7fc;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   CONTENEDOR GENERAL DEL VIDEO
+===================================================== */
+
+.video-contenedor {
+    width: 100%;
+    height: 190px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #111;
+    border-radius: 5px;
+}
+
+
+/* =====================================================
+   VIDEO GENERAL
+===================================================== */
+
+.video-contenedor video {
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    background: #111;
+
+    /* Permite el modo pantalla completa */
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   VIDEOS 01, 02 Y 03
+   FORMATO VERTICAL 9:16
+===================================================== */
+
+.video-vertical .video-contenedor {
+    width: 100%;
+
+    aspect-ratio: 9 / 16;
+
+    height: auto;
+
+    margin: 0 auto;
+}
+
+
+.video-vertical .video-contenedor video {
+    width: auto;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   COMENTARIO
+===================================================== */
+
+.video-comentario {
+    padding: 12px 5px 5px;
+}
+
+
+.video-comentario h3 {
+    margin: 0;
+
+    color: var(--azul-oscuro);
+
+    font-size: 14px;
+}
+
+
+.video-comentario p {
+    margin-top: 5px;
+
+    color: var(--gris);
+
+    font-size: 10px;
+
+    line-height: 1.55;
+}
+
+
+/* =====================================================
+   VIDEO 04 - HORIZONTAL
+===================================================== */
+
+.video-horizontal {
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    display: block;
+
+    padding: 18px;
+}
+
+
+/* =====================================================
+   CONTENEDOR DEL VIDEO 04
+   FORMATO HORIZONTAL 16:9
+===================================================== */
+
+.video-horizontal .video-contenedor {
+    width: 70%;
+
+    max-width: 750px;
+
+    height: auto;
+
+    aspect-ratio: 16 / 9;
+
+    margin: 10px auto 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    background: #111;
+
+    border-radius: 5px;
+}
+
+
+/* =====================================================
+   VIDEO 04
+===================================================== */
+
+.video-horizontal .video-contenedor video {
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+}
+
+
+/* =====================================================
+   COMENTARIO DEL VIDEO 04
+===================================================== */
+
+.video-horizontal .video-comentario {
+    padding: 18px 5px 5px;
+}
+
+
+.video-horizontal .video-comentario h3 {
+    margin: 0;
+
+    color: var(--azul-oscuro);
+
+    font-size: 15px;
+}
+
+
+.video-horizontal .video-comentario p {
+    max-width: 750px;
+
+    margin-top: 5px;
+
+    color: var(--gris);
+
+    font-size: 11px;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   PANTALLA COMPLETA DEL VIDEO
+===================================================== */
+
+/*
+   Estas reglas ayudan a que el video ocupe
+   correctamente la pantalla cuando se amplía.
+*/
+
+.video-contenedor video:fullscreen {
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+    max-height: none;
+
+    object-fit: contain;
+
+    background: #000;
+}
+
+
+/* Compatibilidad con algunos navegadores */
+
+.video-contenedor video:-webkit-full-screen {
+    width: 100%;
+    height: 100%;
+
+    max-width: none;
+    max-height: none;
+
+    object-fit: contain;
+
+    background: #000;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .evaluacion-videos {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .video-horizontal {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    .video-horizontal .video-contenedor {
+        width: 80%;
+    }
+}
+
+
+/* =====================================================
+   CELULAR
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .criterios {
+        width: 92%;
+    }
+
+    .evaluacion-videos {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .video-evaluacion {
+        padding: 12px;
+    }
+
+
+    /* -----------------------------------------------
+       VIDEOS 01, 02 Y 03
+       VERTICALES
+    ------------------------------------------------ */
+
+    .video-vertical .video-contenedor {
+        width: 100%;
+
+        aspect-ratio: 9 / 16;
+
+        height: auto;
+    }
+
+    .video-vertical .video-contenedor video {
+        width: auto;
+        height: 100%;
+
+        max-width: 100%;
+
+        object-fit: contain;
+    }
+
+
+    /* -----------------------------------------------
+       VIDEO 04
+       HORIZONTAL
+    ------------------------------------------------ */
+
+    .video-horizontal {
+        grid-column: auto;
+
+        width: 100%;
+
+        margin: 0;
+
+        padding: 12px;
+
+        display: block;
+    }
+
+    .video-horizontal .video-contenedor {
+        width: 100%;
+
+        max-width: none;
+
+        height: auto;
+
+        aspect-ratio: 16 / 9;
+
+        margin: 10px auto 0;
+    }
+
+    .video-horizontal .video-contenedor video {
+        width: 100%;
+        height: 100%;
+
+        object-fit: contain;
+    }
+
+    .video-horizontal .video-comentario {
+        padding: 14px 5px 5px;
+    }
+}
+
+
+/* =====================================================
+   CELULAR PEQUEÑO
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .video-vertical .video-contenedor {
+        aspect-ratio: 9 / 16;
+        height: auto;
+    }
+
+    .video-horizontal .video-contenedor {
+        width: 100%;
+
+        aspect-ratio: 16 / 9;
+
+        height: auto;
+    }
+}
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+
+    padding: 25px 5%;
+
+    color: #8fa2b4;
+
+    text-align: center;
+
+    background: #061c31;
+
+}
+
+
+footer p {
+
+    font-size: 10px;
+
+}
+
+
+/* =====================================================
+   ANIMACIÓN
+===================================================== */
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(15px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+.hero-contenido,
+.pagina-hero-contenido {
+
+    animation:
+        aparecer 0.8s ease;
+
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    .navbar {
+
+        flex-direction: column;
+
+        padding: 15px;
+
+        gap: 10px;
+
+    }
+
+
+    .navbar nav {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+    .etapas-grid {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+
+    .inicio-seccion {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+
+    .estudiante {
+
+        grid-template-columns: 190px 1fr;
+
+    }
+
+
+    .necesidades-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .criterios {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .navbar nav a {
+
+        padding: 7px 8px;
+
+        font-size: 9px;
+
+    }
+
+
+    .hero {
+
+        min-height: 550px;
+
+        padding: 60px 6%;
+
+    }
+
+
+    .hero h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .etapas-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+
+    .definicion-intro {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .problema-principal {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .necesidades-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .ideas-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .prototipo-seccion {
+
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+
+    }
+
+
+    .detalles-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .criterios {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .estudiante {
+
+        grid-template-columns: 1fr;
+
+        padding: 15px;
+
+    }
+
+
+    .estudiante-foto {
+
+        height: 250px;
+
+    }
+
+
+    .pregunta h3 {
+
+        font-size: 10px;
+
+    }
+
+
+    .pregunta {
+
+        padding: 10px;
+
+    }
+
+
+    .etapas-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .objetivo-card {
+
+        grid-template-columns: 1fr;
+
+        padding: 25px;
+
+    }
+
+
+    .objetivo-numero {
+
+        font-size: 45px;
+
+    }
+
+
+    .caracteristicas {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+/* =====================================================
+   TARJETAS - ¿QUÉ PROPONEMOS MEJORAR?
+===================================================== */
+
+.prototipo-detalles {
+    width: min(1200px, 90%);
+    margin: auto;
+    padding: 70px 0;
+}
+
+.prototipo-detalles .seccion-titulo {
+    margin-bottom: 35px;
+}
+
+.prototipo-detalles .seccion-titulo h2 {
+    margin-top: 10px;
+    color: var(--azul-oscuro);
+    font-size: clamp(36px, 4vw, 50px);
+    line-height: 1.1;
+}
+
+.detalles-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.detalles-grid article {
+    padding: 25px;
+    min-width: 0;
+    min-height: 150px;
+    background: white;
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+}
+
+.detalles-grid span {
+    display: block;
+    margin-bottom: 8px;
+    color: #8fc7ec;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.detalles-grid h3 {
+    margin: 0;
+    color: var(--azul-oscuro);
+    font-size: 20px;
+}
+
+.detalles-grid p {
+    margin-top: 10px;
+    color: var(--gris);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .detalles-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .prototipo-detalles {
+        width: 92%;
+        padding: 50px 0;
+    }
+
+    .prototipo-detalles .seccion-titulo h2 {
+        font-size: 32px;
+    }
+
+    .detalles-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .detalles-grid article {
+        min-height: auto;
+        padding: 20px;
+    }
+
+    .detalles-grid h3 {
+        font-size: 18px;
+    }
+
+    .detalles-grid p {
+        font-size: 14px;
+    }
+
+}

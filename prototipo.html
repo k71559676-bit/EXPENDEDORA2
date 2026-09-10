@@ -1,0 +1,585 @@
+html
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prototipo | MÁQUINA EXPENDEDORA SENATI</title>
+
+    <link rel="stylesheet" href="stilos.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="logo">
+
+        PROYECTO <span>SENATI</span>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            Inicio
+        </a>
+
+        <a href="empatizar.html">
+            Empatizar
+        </a>
+
+        <a href="definicion.html">
+            Definición
+        </a>
+
+        <a href="ideas.html">
+            Ideas
+        </a>
+
+        <a href="prototipo.html" class="activo">
+            Prototipo
+        </a>
+
+        <a href="evaluacion.html">
+            Evaluación
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<section class="pagina-hero">
+
+    <div class="pagina-hero-contenido">
+
+        <span class="etiqueta">
+            ETAPA 04 · DESIGN THINKING
+        </span>
+
+
+        <h1>
+            Prototipo
+        </h1>
+
+
+        <p>
+
+            Presentamos una primera propuesta de cómo podría
+            funcionar nuestra máquina expendedora dentro de SENATI.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     PROTOTIPO
+===================================================== -->
+
+<section class="prototipo-seccion">
+
+    <!-- VISTAS DEL PROTOTIPO -->
+    <div class="prototipo-imagen">
+
+        <!-- VISTA FRONTAL -->
+        <div class="vista-prototipo">
+
+            <span class="titulo-vista">
+                Vista frontal
+            </span>
+
+            <img
+                src="img/frontal.png"
+                alt="Vista frontal de la máquina expendedora">
+
+           <button 
+    type="button" 
+    onclick="abrirImagen('img/frontal.png')"> 
+    Ver completo 
+</button>
+        </div>
+
+
+        <!-- VISTA LATERAL -->
+        <div class="vista-prototipo">
+
+            <span class="titulo-vista">
+                Vista lateral
+            </span>
+
+            <img
+                src="img/lateral.png"
+                alt="Vista lateral de la máquina expendedora">
+
+            <button 
+    type="button" 
+    onclick="abrirImagen('img/lateral.png')"> 
+    Ver completo 
+</button>
+        </div>
+
+
+        <!-- VISTA SUPERIOR -->
+        <div class="vista-prototipo">
+
+            <span class="titulo-vista">
+                Vista superior
+            </span>
+
+      <img 
+    src="img/superior.png" 
+    alt="Vista superior de la máquina expendedora">
+
+<button 
+    type="button" 
+    onclick="abrirImagen('img/superior.png')">
+    Ver completo
+</button>
+
+        </div>
+
+    </div>
+
+
+<!-- =====================================================
+     VISOR PARA VER LA IMAGEN GRANDE
+===================================================== -->
+
+<div id="visor-imagen" class="visor-imagen">
+
+    <button
+        type="button"
+        class="cerrar-visor"
+        onclick="cerrarImagen()">
+        ×
+    </button>
+
+    <img
+        id="imagen-grande"
+        src=""
+        alt="Imagen ampliada">
+
+</div>
+
+
+
+    <!-- INFORMACIÓN DEL PROTOTIPO -->
+
+    <div class="prototipo-info">
+
+        <span class="etiqueta">
+            PROPUESTA
+        </span>
+
+
+        <h2>
+            Máquina expendedora para estudiantes
+        </h2>
+
+
+        <p>
+
+            La propuesta busca facilitar el acceso a productos
+            durante la jornada académica, ofreciendo una alternativa
+            rápida, práctica y accesible para los estudiantes de SENATI.
+
+        </p>
+
+
+
+        <!-- CARACTERÍSTICAS -->
+
+        <div class="caracteristicas">
+
+
+            <div>
+
+                <span>
+                    01
+                </span>
+
+                <h3>
+                    Accesibilidad
+                </h3>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    02
+                </span>
+
+                <h3>
+                    Rapidez
+                </h3>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    03
+                </span>
+
+                <h3>
+                    Practicidad
+                </h3>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    04
+                </span>
+
+                <h3>
+                    Facilidad de uso
+                </h3>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     WIREFRAME
+===================================================== -->
+
+<section class="wireframe-seccion">
+
+    <!-- TÍTULO -->
+
+    <div class="seccion-titulo">
+
+        <span class="etiqueta">
+            DOCUMENTACIÓN DEL PROTOTIPO
+        </span>
+
+        <h2>
+            Wireframe
+        </h2>
+
+        <p>
+            Representación de la estructura y distribución de
+            los elementos propuestos para la máquina expendedora.
+        </p>
+
+    </div>
+
+
+    <!-- =================================================
+         CONTENEDOR PRINCIPAL
+    ================================================== -->
+
+    <div class="wireframe-grid">
+
+
+        <!-- =================================================
+             01 · ARCHIVO DEL WIREFRAME
+        ================================================== -->
+
+        <div class="wireframe-archivo">
+
+            <span class="numero">
+                01
+            </span>
+
+            <h3>
+                Archivo del Wireframe
+            </h3>
+
+            <p>
+                Consulta el documento donde se presenta la
+                estructura inicial y organización del proyecto.
+            </p>
+
+
+            <div class="archivo-box">
+
+                <div class="archivo-icono">
+                    📄
+                </div>
+
+                <h4>
+                    Documento del Wireframe
+                </h4>
+
+                <p>
+                    PDF
+                </p>
+
+                <a
+                    href="archivos/wireframe.pdf"
+                    target="_blank"
+                    class="btn-archivo">
+
+                    Ver Wireframe
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             03 · STORY BOARD
+        ================================================== -->
+
+        <div class="wireframe-storyboard">
+
+            <span class="numero">
+                03
+            </span>
+
+            <h3>
+                Story Board
+            </h3>
+
+            <p>
+                Documento que representa visualmente la
+                secuencia de acciones y situaciones planteadas
+                para el proyecto.
+            </p>
+
+
+            <div class="archivo-box">
+
+                <div class="archivo-icono">
+                    📄
+                </div>
+
+                <h4>
+                    Documento del Story Board
+                </h4>
+
+                <p>
+                    PDF
+                </p>
+
+                <a
+                    href="archivos/expendedora.pdf"
+                    target="_blank"
+                    class="btn-archivo">
+
+                    Ver Story Board
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             02 · BOCETO
+        ================================================== -->
+
+        <div class="wireframe-boceto">
+
+            <span class="numero">
+                02
+            </span>
+
+            <h3>
+                Boceto del prototipo
+            </h3>
+
+            <p>
+                Representación inicial de la idea de la máquina
+                expendedora antes de desarrollar el prototipo.
+            </p>
+
+
+            <div class="boceto-box">
+
+                <img
+                    src="img/boceto.png"
+                    alt="Boceto inicial de la máquina expendedora">
+
+
+                <button
+                    type="button"
+                    class="boceto-ampliar"
+                    onclick="abrirImagen('img/boceto.png')">
+
+                    Ver completo
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     DETALLES / MEJORAS
+===================================================== -->
+
+<section class="prototipo-detalles">
+
+
+    <div class="seccion-titulo">
+
+        <span class="etiqueta">
+            CARACTERÍSTICAS
+        </span>
+
+
+        <h2>
+            ¿Qué proponemos mejorar?
+        </h2>
+
+    </div>
+
+
+
+    <div class="detalles-grid">
+
+
+        <!-- ACCESO -->
+
+        <article>
+
+            <span>
+                01
+            </span>
+
+
+            <h3>
+                Acceso
+            </h3>
+
+
+            <p>
+
+                Facilitar que los estudiantes puedan adquirir
+                productos sin desplazarse demasiado de sus
+                actividades académicas.
+
+            </p>
+
+        </article>
+
+
+
+        <!-- INTERACCIÓN -->
+
+        <article>
+
+            <span>
+                02
+            </span>
+
+
+            <h3>
+                Interacción
+            </h3>
+
+
+            <p>
+
+                Diseñar un proceso sencillo para seleccionar
+                el producto y realizar la compra.
+
+            </p>
+
+        </article>
+
+
+
+        <!-- EXPERIENCIA -->
+
+        <article>
+
+            <span>
+                03
+            </span>
+
+
+            <h3>
+                Experiencia
+            </h3>
+
+
+            <p>
+
+                Crear una experiencia rápida y práctica que
+                responda a las necesidades identificadas
+                durante las entrevistas.
+
+            </p>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer>
+
+    <p>
+
+        Proyecto académico · Prototipo de máquina expendedora · SENATI
+
+    </p>
+
+</footer>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="scrip.js"></script>
+
+
+</body>
+
+</html>
+```
